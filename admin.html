@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daddy's Koko Breakfast - Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+  <audio id="notification-sound" preload="auto">
+    <source src="notification.mp3" type="audio/mpeg">
+  </audio>
+</head>
+<body>
+
+  <!-- LOGIN PAGE -->
+  <div id="login-page">
+    <h2>Admin Login</h2>
+    <input type="email" id="admin-email" placeholder="Enter email">
+    <input type="password" id="admin-password" placeholder="Enter password">
+    <button id="login-btn">Login</button>
+  </div>
+
+  <!-- ADMIN PANEL -->
+  <div id="admin-panel" style="display:none;">
+    <h1>Orders Dashboard</h1>
+
+    <table id="orders-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Pickup Time</th>
+          <th>Meals</th>
+          <th>Order</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="orders-list">
+        <!-- Orders populate here -->
+      </tbody>
+    </table>
+
+    <button id="logout-btn" style="margin-top:20px;">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="admin.js"></script>
+
+</body>
+</html>
