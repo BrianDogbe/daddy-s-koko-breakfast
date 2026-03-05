@@ -1,6 +1,6 @@
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBcKB8Hd1A19Eu1knnYTW00C2ZFlHMR1-4",
+  apiKey: "AIzaSyChhwhaN2KPZUn1qOJaIp92TBY2Y1ucYrc",
   authDomain: "daddy-s-koko-breakfast.firebaseapp.com",
   projectId: "daddy-s-koko-breakfast",
   storageBucket: "daddy-s-koko-breakfast.appspot.com",
@@ -88,5 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
         previousOrderCount = snapshot.docs.length;
       });
   }
+
 
 });
